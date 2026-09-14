@@ -1,2 +1,33 @@
-# saga-choreography
-Implementação de referência do padrão de orquestração Saga utilizando .NET, DDD, CQRS, RabbitMQ, MassTransit, padrão Outbox e transações distribuídas.
+# FinRegSeguros
+
+Enterprise Distributed Transactions
+
+## Tecnologias
+
+- .NET 10
+- RabbitMQ
+- MassTransit
+- EF Core
+- SQL Server
+- DDD
+- CQRS
+- Saga
+- Outbox
+- Inbox
+- Docker
+
+## Arquitetura
+
+```mermaid
+flowchart LR
+
+API --> RabbitMQ
+
+RabbitMQ --> Saga
+
+Saga --> Regulatory
+
+Regulatory --> RabbitMQ
+
+RabbitMQ --> Saga
+```
