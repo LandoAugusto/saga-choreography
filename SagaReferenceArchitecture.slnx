@@ -1,10 +1,10 @@
 <Solution>
   <Folder Name="/BuildingBlocks/">
-    <Project Path="src/FinRegSeguros.BuildingBlocks.Contracts/SagaReferenceArchitecture.BuildingBlocks.Contracts.csproj" />
-    <Project Path="src/FinRegSeguros.BuildingBlocks.Messaging/SagaReferenceArchitecture.BuildingBlocks.Messaging.csproj" />
-    <Project Path="src/FinRegSeguros.BuildingBlocks.Outbox/SagaReferenceArchitecture.BuildingBlocks.Outbox.csproj" />
+    <Project Path="src/SagaReferenceArchitecture.BuildingBlocks.Contracts/SagaReferenceArchitecture.BuildingBlocks.Contracts.csproj" />
+    <Project Path="src/SagaReferenceArchitecture.BuildingBlocks.Messaging/SagaReferenceArchitecture.BuildingBlocks.Messaging.csproj" />
+    <Project Path="src/SagaReferenceArchitecture.BuildingBlocks.Outbox/SagaReferenceArchitecture.BuildingBlocks.Outbox.csproj" />
   </Folder>
   <Folder Name="/Gateway/">
-    <Project Path="src/FinRegSeguros.Ingestion.API/SagaReferenceArchitecture.Ingestion.API.csproj" />
+    <Project Path="src/SagaReferenceArchitecture.Ingestion.API/SagaReferenceArchitecture.Ingestion.API.csproj" />
   </Folder>
 </Solution>

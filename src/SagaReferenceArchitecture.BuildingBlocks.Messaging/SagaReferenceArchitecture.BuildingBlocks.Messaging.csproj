@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FinRegSeguros.BuildingBlocks.Contracts\SagaReferenceArchitecture.BuildingBlocks.Contracts.csproj" />
-    <ProjectReference Include="..\FinRegSeguros.BuildingBlocks.Outbox\SagaReferenceArchitecture.BuildingBlocks.Outbox.csproj" />
+    <ProjectReference Include="..\SagaReferenceArchitecture.BuildingBlocks.Contracts\SagaReferenceArchitecture.BuildingBlocks.Contracts.csproj" />
+    <ProjectReference Include="..\SagaReferenceArchitecture.BuildingBlocks.Outbox\SagaReferenceArchitecture.BuildingBlocks.Outbox.csproj" />
   </ItemGroup>
 
 </Project>
