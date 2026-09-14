@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Messaging.Configuration;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
 
 /// <summary>
 /// Provides constant values for queue names used in messaging. 

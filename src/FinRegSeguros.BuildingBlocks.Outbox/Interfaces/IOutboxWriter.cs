@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
 
 /// <summary>
 /// Define o contrato responsável por registrar mensagens

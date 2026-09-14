@@ -1,6 +1,6 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Entities;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Entities;
 
-namespace FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
 
 /// <summary>
 /// Define o contrato responsável pela publicação de mensagens

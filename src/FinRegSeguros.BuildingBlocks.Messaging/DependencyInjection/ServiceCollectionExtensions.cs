@@ -1,12 +1,12 @@
-﻿using FinRegSeguros.BuildingBlocks.Messaging.Abstractions;
-using FinRegSeguros.BuildingBlocks.Messaging.Configuration;
-using FinRegSeguros.BuildingBlocks.Messaging.Publishers;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Publishers;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.DependencyInjection;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.DependencyInjection;
 
 /// <summary>
 /// 

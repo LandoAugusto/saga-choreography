@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Messaging.Abstractions;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
 
 
 /// <summary>

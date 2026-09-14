@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Contracts.Events;
-using FinRegSeguros.BuildingBlocks.Messaging.Abstractions;
+using SagaReferenceArchitecture.BuildingBlocks.Contracts.Events;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
 
-namespace FinRegSeguros.Ingestion.API.Features.Payment;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment;
 
 /// <summary>
 /// Handles the processing of payment events and publishes a new event upon successful payment approval.    

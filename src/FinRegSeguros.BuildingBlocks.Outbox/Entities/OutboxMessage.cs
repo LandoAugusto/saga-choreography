@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Outbox.Entities;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Entities;
 
 /// <summary>
 /// Representa uma mensagem persistida na tabela Outbox.

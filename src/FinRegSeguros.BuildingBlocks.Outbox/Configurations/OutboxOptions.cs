@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Outbox.Configuration;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Configuration;
 
 /// <summary>
 /// Define as configurações utilizadas pelo mecanismo de Outbox.

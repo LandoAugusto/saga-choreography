@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Messaging.Headers;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Headers;
 
 
 /// <summary>

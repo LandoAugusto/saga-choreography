@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Entities;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinRegSeguros.BuildingBlocks.Outbox.Persistence;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Persistence;
 
 /// <summary>
 /// Representa o contexto de persistência da Outbox.

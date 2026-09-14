@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Messaging.Configuration;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
 
 /// <summary>
 /// Represents the options for configuring messaging.   

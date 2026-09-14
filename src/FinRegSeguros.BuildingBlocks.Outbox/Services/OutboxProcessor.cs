@@ -1,9 +1,9 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
-using FinRegSeguros.BuildingBlocks.Outbox.Persistence;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace FinRegSeguros.BuildingBlocks.Outbox.Services;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Services;
 
 /// <summary>
 /// Implementa o processamento das mensagens pendentes da Outbox.

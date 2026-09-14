@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
-using FinRegSeguros.BuildingBlocks.Outbox.Persistence;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Persistence;
 
-namespace FinRegSeguros.BuildingBlocks.Outbox.Services;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Services;
 
 /// <summary>
 /// Implementa a gravação de mensagens na Outbox.

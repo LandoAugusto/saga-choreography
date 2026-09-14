@@ -1,6 +1,6 @@
-using FinRegSeguros.BuildingBlocks.Messaging.DependencyInjection;
-using FinRegSeguros.Ingestion.API.Features.Payment;
-using FinRegSeguros.Ingestion.API.Features.Policy;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.DependencyInjection;
+using SagaReferenceArchitecture.Ingestion.API.Features.Payment;
+using SagaReferenceArchitecture.Ingestion.API.Features.Policy;
 
 var builder = WebApplication.CreateBuilder(args);
 

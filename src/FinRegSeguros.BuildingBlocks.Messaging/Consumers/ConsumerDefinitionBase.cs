@@ -1,6 +1,6 @@
-﻿using MassTransit;
+using MassTransit;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.Consumers;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Consumers;
 
 /// <summary>
 /// Configuração base dos consumers do MassTransit.

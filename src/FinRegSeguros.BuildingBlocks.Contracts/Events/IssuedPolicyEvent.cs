@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Contracts.Events
+namespace SagaReferenceArchitecture.BuildingBlocks.Contracts.Events
 {
     /// <summary>
     /// Event representing the issuance of a policy for a client based on a proposal and value. 

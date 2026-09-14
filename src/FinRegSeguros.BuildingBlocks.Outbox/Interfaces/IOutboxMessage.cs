@@ -1,4 +1,4 @@
-namespace FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
 
 /// <summary>
 /// Define o contrato de uma mensagem armazenada na Outbox.
@@ -27,7 +27,7 @@ public interface IOutboxMessage
     /// Tipo da mensagem que será publicada.
     ///
     /// Exemplo:
-    /// FinRegSeguros.Contracts.Transactions.IniciarTransacao
+    /// SagaReferenceArchitecture.Contracts.Transactions.IniciarTransacao
     /// </summary>
     string MessageType { get; }
 

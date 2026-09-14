@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.Retry
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Retry
 {
     internal class RetryPolicy
     {

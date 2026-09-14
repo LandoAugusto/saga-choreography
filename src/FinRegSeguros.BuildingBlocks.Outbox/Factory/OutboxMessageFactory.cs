@@ -1,8 +1,8 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Entities;
-using FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Entities;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
 using System.Text.Json;
 
-namespace FinRegSeguros.BuildingBlocks.Outbox.Factory;
+namespace SagaReferenceArchitecture.BuildingBlocks.Outbox.Factory;
 
 /// <summary>
 /// Cria registros de Outbox a partir de mensagens de domínio

@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Contracts.Events;
-using FinRegSeguros.BuildingBlocks.Messaging.Abstractions;
+using SagaReferenceArchitecture.BuildingBlocks.Contracts.Events;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
 
-namespace FinRegSeguros.Ingestion.API.Features.Policy
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy
 {
     /// <summary>
     /// Handles the issuance of policies and publishes an event indicating that a policy has been issued.

@@ -1,4 +1,4 @@
-﻿namespace FinRegSeguros.BuildingBlocks.Messaging.Configuration;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
 
 /// <summary>
 /// Representa as configurações necessárias para conexão e
@@ -21,7 +21,7 @@ public sealed class RabbitMqOptions
     /// Exemplos:
     /// - localhost
     /// - rabbitmq
-    /// - rabbitmq.finregseguros.local
+    /// - rabbitmq.SagaReferenceArchitecture.local
     /// </summary>
     public string Host { get; init; } = string.Empty;
 

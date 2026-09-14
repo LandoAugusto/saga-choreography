@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Messaging.Abstractions;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
 using MassTransit;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.Publishers;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Publishers;
 
 internal sealed class MassTransitPublisher :
     IMessagePublisher

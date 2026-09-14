@@ -1,7 +1,7 @@
-﻿using FinRegSeguros.BuildingBlocks.Contracts.Events;
 using MassTransit;
+using SagaReferenceArchitecture.BuildingBlocks.Contracts.Events;
 
-namespace FinRegSeguros.Ingestion.API.Features.Payment;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment;
 
 /// <summary>
 /// Consumer that listens for IssuedPolicyEvent messages and processes payments accordingly. 
@@ -11,17 +11,17 @@ public class ProcessPaymentConsumer(ProcessPaymentHandler _handler)
     : IConsumer<IssuedPolicyEvent>
 {
 
-    /// <summary>
-    /// Initializes a new instance of the ProcessPaymentConsumer class with the specified ProcessPaymentHandler.    
-    /// </summary>
-    /// <param name="context"></param>
-    /// <returns></returns>
+  /// <summary>
+  /// Initializes a new instance of the ProcessPaymentConsumer class with the specified ProcessPaymentHandler.    
+  /// </summary>
+  /// <param name="context"></param>
+  /// <returns></returns>
 
-    public async Task Consume(
-        ConsumeContext<IssuedPolicyEvent> context)
-    {
-        await _handler.Handle(
-            context.Message,
-            context.CancellationToken);
-    }
+  public async Task Consume(
+      ConsumeContext<IssuedPolicyEvent> context)
+  {
+    await _handler.Handle(
+        context.Message,
+        context.CancellationToken);
+  }
 }

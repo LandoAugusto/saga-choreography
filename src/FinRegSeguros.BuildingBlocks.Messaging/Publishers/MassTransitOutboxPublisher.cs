@@ -1,9 +1,9 @@
-﻿using FinRegSeguros.BuildingBlocks.Outbox.Entities;
-using FinRegSeguros.BuildingBlocks.Outbox.Interfaces;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Entities;
+using SagaReferenceArchitecture.BuildingBlocks.Outbox.Interfaces;
 using MassTransit;
 using System.Text.Json;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.Publishers;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Publishers;
 
 /// <summary>
 /// Publica mensagens da Outbox utilizando MassTransit.

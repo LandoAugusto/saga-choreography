@@ -1,7 +1,7 @@
-﻿namespace FinRegSeguros.Ingestion.API.Features.Policy;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy;
 
 /// <summary>
-/// Represents the endpoint for issuing policies in the FinRegSeguros application.  
+/// Represents the endpoint for issuing policies in the SagaReferenceArchitecture application.  
 /// </summary>
 public static class IssuePolicyEndpoint
 {

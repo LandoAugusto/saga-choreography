@@ -1,9 +1,9 @@
-﻿using MassTransit;
+using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace FinRegSeguros.BuildingBlocks.Messaging.Configuration;
+namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
 
 /// <summary>
 /// Fornece métodos de extensão para registrar e configurar
