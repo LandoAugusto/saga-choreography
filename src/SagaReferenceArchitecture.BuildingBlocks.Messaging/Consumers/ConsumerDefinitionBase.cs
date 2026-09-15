@@ -1,4 +1,8 @@
 using MassTransit;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Configuration;
+using SagaReferenceArchitecture.BuildingBlocks.Messaging.Retry;
 
 namespace SagaReferenceArchitecture.BuildingBlocks.Messaging.Consumers;
 
@@ -10,35 +14,40 @@ public abstract class ConsumerDefinitionBase<TConsumer> :
     ConsumerDefinition<TConsumer>
     where TConsumer : class, IConsumer
 {
-    /// <summary>
-    /// Inicializa a definição do consumer.
-    /// </summary>
-    protected ConsumerDefinitionBase()
-    {
-        EndpointName = typeof(TConsumer).Name
-            .Replace("Consumer", string.Empty)
-            .ToLowerInvariant();
-    }
 
-    /// <summary>
-    /// Configura o pipeline do consumer.
-    /// </summary>
-    protected override void ConfigureConsumer(
-        IReceiveEndpointConfigurator endpointConfigurator,
-        IConsumerConfigurator<TConsumer> consumerConfigurator,
-        IRegistrationContext context)
-    {
-        // Retry das mensagens que apresentarem falha.
-        endpointConfigurator.UseMessageRetry(r =>
-        {
-            r.Interval(
-                3,
-                TimeSpan.FromSeconds(5));
-        });
+  /// <summary>
+  /// Inicializa a definição do consumer.
+  /// </summary>
+  protected ConsumerDefinitionBase()
+  {
 
-        // Publicações feitas durante o consumo
-        // somente são liberadas após o processamento
-        // ser concluído com sucesso.
-        endpointConfigurator.UseInMemoryOutbox(context);
-    }
+    EndpointName = typeof(TConsumer).Name
+        .Replace("Consumer", string.Empty)
+        .ToLowerInvariant();
+  }
+
+  /// <summary>
+  /// Configura o pipeline do consumer.
+  /// </summary>
+  protected override void ConfigureConsumer(
+      IReceiveEndpointConfigurator endpointConfigurator,
+      IConsumerConfigurator<TConsumer> consumerConfigurator,
+      IRegistrationContext context)
+  {
+
+    var retryOptions =
+            context.GetRequiredService<IOptions<RetryOptions>>()
+                .Value;
+
+    // Retry das mensagens que apresentarem falha.
+    RetryPolicy.Configure(
+             endpointConfigurator,
+             retryOptions);
+
+
+    // Publicações feitas durante o consumo
+    // somente são liberadas após o processamento
+    // ser concluído com sucesso.
+    endpointConfigurator.UseInMemoryOutbox(context);
+  }
 }

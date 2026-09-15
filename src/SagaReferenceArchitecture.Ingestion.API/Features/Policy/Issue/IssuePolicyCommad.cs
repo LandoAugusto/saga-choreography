@@ -1,4 +1,4 @@
-namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy.Issue;
 
 /// <summary>
 /// Command to issue a policy for a client based on a proposal and value.

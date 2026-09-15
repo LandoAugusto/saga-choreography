@@ -1,7 +1,7 @@
 using SagaReferenceArchitecture.BuildingBlocks.Contracts.Events;
 using SagaReferenceArchitecture.BuildingBlocks.Messaging.Abstractions;
 
-namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment.Process;
 
 /// <summary>
 /// Handles the processing of payment events and publishes a new event upon successful payment approval.    

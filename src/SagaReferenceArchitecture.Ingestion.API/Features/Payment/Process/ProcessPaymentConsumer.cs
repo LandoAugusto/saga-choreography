@@ -1,13 +1,13 @@
 using MassTransit;
 using SagaReferenceArchitecture.BuildingBlocks.Contracts.Events;
 
-namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Payment.Process;
 
 /// <summary>
 /// Consumer that listens for IssuedPolicyEvent messages and processes payments accordingly. 
 /// It uses the ProcessPaymentHandler to handle the payment processing logic.  
 /// </summary>
-public class ProcessPaymentConsumer(ProcessPaymentHandler _handler)
+public class ProcessPaymentConsumer(ProcessPaymentHandler handler)
     : IConsumer<IssuedPolicyEvent>
 {
 
@@ -20,7 +20,7 @@ public class ProcessPaymentConsumer(ProcessPaymentHandler _handler)
   public async Task Consume(
       ConsumeContext<IssuedPolicyEvent> context)
   {
-    await _handler.Handle(
+    await handler.Handle(
         context.Message,
         context.CancellationToken);
   }

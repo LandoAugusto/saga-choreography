@@ -1,4 +1,4 @@
-namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy;
+namespace SagaReferenceArchitecture.Ingestion.API.Features.Policy.Issue;
 
 /// <summary>
 /// Represents the endpoint for issuing policies in the SagaReferenceArchitecture application.  
